@@ -17,7 +17,6 @@ export default defineConfig({
         target: 'http://127.0.0.1:5000',
         changeOrigin: true,
         secure: false,
-        // PHẢI MỞ DÒNG NÀY: Để nó xóa bớt chữ /api thừa khi gọi từ Frontend
         // Giữ nguyên logic rewrite của mày để khớp với Backend
         rewrite: (path) => path.replace(/^\/api/, ''), 
       },
